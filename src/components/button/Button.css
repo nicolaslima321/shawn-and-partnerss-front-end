@@ -10,6 +10,18 @@
   padding: 11px 20px;
 }
 
+.button:disabled {
+  background-color: grey;
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.button:hover:disabled {
+  background-color: grey;
+  background-color: grey;
+  cursor: not-allowed;
+}
+
 .button--primary {
   background-color: #2e3440;
   border-color: #2e3440;

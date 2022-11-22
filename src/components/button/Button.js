@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Button = ({ variant = 'primary', size, label, ...props }) => {
+import './Button.css';
+
+export const Button = ({ disabled, variant = 'primary', size, label, ...props }) => {
   const buttonVariantClass =
     variant === 'primary' ? 'button--primary' : 'button--secondary';
 
   return (
     <button
       type="button"
+      disabled={disabled}
       className={['button', buttonVariantClass].join(' ')}
       {...props}
     >
@@ -17,6 +20,10 @@ export const Button = ({ variant = 'primary', size, label, ...props }) => {
 };
 
 Button.propTypes = {
+  /**
+   * If button is disabled
+   */
+  disabled: PropTypes.bool,
   /**
    * What variant to use, primary or secondary
    */
@@ -32,6 +39,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  disabled: false,
   variant: 'primary',
   label: 'Lorem ipsum',
   onClick: undefined,

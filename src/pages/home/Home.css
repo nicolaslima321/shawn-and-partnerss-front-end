@@ -1,0 +1,30 @@
+.home {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home__input-label {
+  display: flex;
+}
+
+.home__input {
+  margin-bottom: 16px;
+}
+
+.home__inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.home__options-container {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
