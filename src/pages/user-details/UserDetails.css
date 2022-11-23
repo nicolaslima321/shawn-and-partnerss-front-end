@@ -1,0 +1,44 @@
+.user-details {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 32px 0;
+}
+
+.user-details__profile {
+  align-self: center;
+  width: 65%;
+}
+
+.user-details__repo-cards {
+  margin: 12px 0;
+}
+
+.user-details__user-avatar {
+  max-width: 64px;
+  max-height: 64px;
+  border-radius: 50%;
+  border: solid black 2px;
+}
+
+.user-details__user-info {
+  display: flex;
+  margin-left: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+a {
+  color: dodgerblue;
+}
+
+a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.user-details__repositories {
+  width: 100%;
+}

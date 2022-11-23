@@ -1,22 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Card = ({ slot, ...props }) => {
+import './Card.css';
+
+export const Card = ({ children, ...props }) => {
   return (
     <div
-      className={'card'}
+      className='card'
       {...props}
     >
-      { slot }
+      { children }
     </div>
   );
 };
 
 Card.propTypes = {
   /**
-   * Required slot (HTML/JSX) to render inside the card
+   * Required children (HTML/JSX) to render inside the card
    */
-  slot: PropTypes.object,
+  children: PropTypes.any,
   /**
    * Optional click handler
    */

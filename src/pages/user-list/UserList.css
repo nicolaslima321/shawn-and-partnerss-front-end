@@ -1,0 +1,43 @@
+.user-list {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 32px 0;
+}
+
+.user-list__cards-container {
+  align-self: center;
+  width: 35%;
+}
+
+.user-list__user-avatar {
+  border-radius: 50%;
+  border: solid black 2px;
+}
+
+.user-list__user-info {
+  display: flex;
+  margin-left: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+a {
+  color: dodgerblue;
+}
+
+a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.user-list__options {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: 35%;
+}

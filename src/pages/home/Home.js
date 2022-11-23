@@ -46,7 +46,7 @@ export const Home = ({ ...props }) => {
           label="Desired user details"
           variant="secondary"
           disabled={!usernameIsValid()}
-          onClick={() => navigate(`/user/${username}/details`)}
+          onClick={() => navigate(`/user/${username}`)}
         />
       </div>
     </div>
