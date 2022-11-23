@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const baseApiUrl =
-  process.env.NODE_ENV === 'development' ? 'http://localhost:8080/api' : 'api';
+  process.env.NODE_ENV === 'development' ? 'http://localhost:8080/api' : 'https://shawn-and-partnerss-api-test.herokuapp.com/api';
 
 export default {
   fetchUsers(sinceFromId = '') {
